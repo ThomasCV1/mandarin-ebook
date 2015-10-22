@@ -1,0 +1,31 @@
+<div id="container">
+<h3>Your Study List for <%=DateTime.now.strftime('%m/%d/%y')%></h3>
+<table>
+<tr>
+	<th class='deck-table-cell'>Count</th>
+	<th class='deck-table-cell'>Pinyin</th>
+	<th class='deck-table-cell'>Word</th>
+    <th class='deck-table-cell'>Part of Speech</th>
+	<th class='deck-table-cell'>Definition</th>
+</tr><br>
+<% @highlight_instances.each do |instance| %>
+	<tr>
+	<% character = instance.character %>
+	<% word = @entries.find_by(character: character)%>
+	<% if word != nil %>
+		<td class='deck-table-cell col-60'><%=instance.count %></td>
+	 	<td class='deck-table-cell col-100'><%=word.pinyin %></td>
+	 	<td class='deck-table-cell col-100'><%=word.character %></td>
+	 	<td class='deck-table-cell col-60'><%=word.part_of_speech %></td>
+	 	<td class='deck-table-cell col-160' 'wide'><%=word.definition %></td>
+	<% else %>
+		<td class='deck-table-cell col-60'><%=instance.count %></td>
+		<td class='deck-table-cell col-100'></td>
+	 	<td class='deck-table-cell col-100'><%=character %></td>
+	 	<td class='deck-table-cell col-60'></td>
+	 	<td class='deck-table-cell col-5' 'wide'></td>
+	<% end %>
+	</tr>
+<% end %>
+</table>
+</div>

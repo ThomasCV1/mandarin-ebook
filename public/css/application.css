@@ -1,0 +1,128 @@
+h3 {
+	text-align: center;
+}
+
+#sidebar-caption {
+	/*margin-top: 100px;*/
+	font-size: 16px;
+}
+#con .well {
+    height:390px;
+}
+.nav-link-1 {
+	margin-left: 67px;
+}
+.nav-link {
+	margin-left: 10px;
+}
+#nav-container {
+	margin-left: 238px;
+	margin-top: 70px;
+	float: left;
+}
+#container {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 70px;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 10px gray;
+    background-color: #c6cbcc;
+    color: white;
+
+}
+#sidebar.affix {
+	/*background-image: url("notebook.jpg");*/
+	/*background-size: cover;   */
+    /*background-repeat: no-repeat;*/
+    position: fixed;
+    top:50px;
+    width:228px;
+    border-right: 2px solid grey;
+    height: 100%;
+    text-align: center;
+    font-size: 55px;
+}
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+#link-left {
+	left: 35%;
+}
+
+th {
+  text-align: left;
+}
+
+body {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.deck-table-cell {
+	border: 1px solid grey;
+
+}
+table {
+
+}
+#show-highlighted-word {
+	position: absolute;
+	font-size: 12px;
+	width: 305px;
+	border: 3px solid black;
+	background-color: white;
+	z-index: +1;
+	right: 30%;
+}
+.col-30 {
+	width: 30px;
+}
+
+.col-60 {
+	width: 60px;
+}
+
+.col-100 {
+	width: 100px;
+}
+
+.col-150 {
+	width: 150px;
+}
+
+.hide-button {
+	text-align: right;
+}
+.show-in-notes {
+
+}
+
+#home-button {
+	float: right;
+}
+.add-to-study-list {
+	
+}
+
+#highlight {
+	background-color: yellow;
+}
+a:link {
+
+}
+
+a:visited {
+
+}
+
+h2 a:hover {
+    color: red;
+    text-decoration: none;
+}

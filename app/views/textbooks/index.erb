@@ -1,0 +1,7 @@
+<div id="container">
+  <h1>Books</h1>
+	<% Book.all.each do |book| %>
+	  <p><%=book.english_title %></p>
+		<p><%=book.chinese_title %></p>
+	<% end %>
+</div>

@@ -1,0 +1,37 @@
+<html>
+<body>
+<div id="container">
+<p><%=@vocab_list.book.english_title %> <%=@vocab_list.book.chinese_title %> </p>
+<h1>Chapter <%=@vocab_list.chapter_id %> Vocab: <%=@vocab_list.title %></h1>
+
+<table>
+<tr>
+	<th class='deck-table-cell'></th>
+	<th class='deck-table-cell'>Pinyin</th>
+	<th class='deck-table-cell'>Word</th>
+    <th class='deck-table-cell'>Part of Speech</th>
+	<th class='deck-table-cell'>Definition</th>
+</tr><br>
+  <% @vocab_list.entries.each_with_index do |entry, index| %>
+	<% if @views.find_by(character: entry.character) !=nil %>
+	  <tr>
+		<td class='deck-table-cell col-1'><%=index + 1 %></td>
+	 	<td class='deck-table-cell col-2'><%=entry.pinyin %></td>
+	 	<td class='deck-table-cell col-3' div id="highlight"><%=entry.character %></div></td>
+	 	<td class='deck-table-cell col-4'><%=entry.part_of_speech %></td>
+		<td class='deck-table-cell col-5' 'wide'><%=entry.definition %></td>
+	  </tr>
+	<% else %>
+	  <tr>
+		<td class='deck-table-cell col-1'><%=index + 1 %></td>
+	 	<td class='deck-table-cell col-2'><%=entry.pinyin %></td>
+	 	<td class='deck-table-cell col-3'><%=entry.character %></td>
+	 	<td class='deck-table-cell col-4'><%=entry.part_of_speech %></td>
+	 	<td class='deck-table-cell col-5' 'wide'><%=entry.definition %></td>
+	  </tr>
+	<% end %>
+  <% end %>
+</table>
+</div>
+</body>
+</html>

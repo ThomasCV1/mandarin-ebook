@@ -1,0 +1,9 @@
+<div id="container">
+<p></p>
+<p>Articles:</p>
+<p></p>
+<h3><%= @book.chinese_title %> <%= @book.english_title %> <%= @book.series %></h3>
+		<% Article.all.each do |article| %>
+			<a href="/articles/<%=article.id%>"><p><%=article.chapter_id%>: <%=article.title %></p></a>
+		<% end %>
+</div>

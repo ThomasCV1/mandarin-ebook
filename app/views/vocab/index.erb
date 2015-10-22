@@ -1,0 +1,9 @@
+<div id="container">
+<p></p>
+<p>Vocab Lists:</p>
+<p></p>
+<h3><%= @book.chinese_title %> <%= @book.english_title %> <%= @book.series %></h3>
+	<p><%@vocab_lists.all.each do |list|%>
+	<p><a href="/vocab/<%=list.id%>"><%=list.chapter_id %>: <%=list.title%></a></p>
+	<%end%>
+</div>

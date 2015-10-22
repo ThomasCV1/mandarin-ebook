@@ -1,0 +1,13 @@
+<div id ="sidebar" class="affix">
+</div>
+<div id="nav-container">
+<p><%=@article.book.english_title %> <%=@article.book.chinese_title %> <%=@article.book.series %></p>
+<h2>Ch. <%=@article.chapter_id %>: <%= @article.title %></h2><br>
+<% @content_array = @article.content.split('/') %>
+<% @content_array.each do |line| %>
+	<div id="current-line"><p><%=line %></p></div>
+<% end %>
+<p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p>
+<p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p><p>*</p>
+
+</div>
