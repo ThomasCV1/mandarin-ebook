@@ -1,5 +1,5 @@
 # mandarin-ebook
-Chinese language learning app (Ruby on Rails/JavaScript)
+Chinese language learning app (Ruby on Sinatra/JavaScript)
 
 Mandarino! is a lightweight proof of concept for a web-based Mandarin Chinese ebook. Textbook content from Chapter 1 of Far East Everyday Chinese 3 is for demonstration purposes only. 
 
